@@ -1,0 +1,1520 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Food website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="app.js"></script>
+
+</head>
+<body>
+
+<section id="Home">
+<nav>
+<div class="logo">
+<img src="LOGO.png" alt="LOGO">
+</div>
+
+<ul>
+<li><a href="#Home">Home</a></li>
+<li><a href="#About">About</a></li>
+<li><a href="#Chocolates">Chocolates</a></li>
+<li><a href="#Candies">Candies</a></li>
+<li><a href="#Chips">Chips</a></li>
+<li><a href="#Review">Review</a></li>
+<li><a href="#Order">Order</a></li>
+</ul>
+
+<div class="header-dropdown">
+<h1 onclick="toggleDropdown()"></h1>
+            
+<div class="cart-dropdown">
+<a href="#" class="cart-link">Shopping Cart</a>
+<div class="cart-content">
+<ul id="cart-items">
+<!-- Cart items will be displayed here -->
+</ul>
+<p>Total: RM <span id="cart-total">0.00</span></p>
+</div>
+</div>
+
+
+</nav>
+
+<div class="main">
+
+<div class="men_text">
+<h1>Get<span>Snack Food</span><br>in a Easy Way</h1>
+</div>
+
+<div class="main_page">
+<img src="main page.png" alt="main page">
+</div>
+
+</div>
+
+<p>
+Welcome to our online snack shop! We are your one-stop destination for all 
+your snacking needs. Whether you have a sweet tooth or prefer savoury treats, 
+we have various delicious snacks to satisfy all your cravings. From crunchy 
+chips to mouth-watering chocolates and candies, we have something for everyone. 
+Browse our selection and discover new flavours to tantalise your taste buds.
+</p>
+
+<div class="main_btn">
+<a href="#">Order Now</a>
+<i class="fa-solid fa-angle-right"></i>
+</div>
+
+</section>
+
+
+
+<!--About-->
+
+<div class="about" id="About">
+<div class="about_main">
+
+<div class="image">
+<img src="about us.png" alt="about us">
+</div>
+
+<div class="about_text">
+<h1><span>About</span>Us</h1>
+<h3>Why Choose Us?</h3>
+<p>
+Firstly, our extensive and diverse selection of snacks 
+allows you to explore and discover a wide array of tasty treats from the 
+comfort of your own home. Additionally, our user-friendly website and intuitive 
+interface make it easy to browse through our offerings, select your favourite 
+snacks. We also prioritise the freshness and quality of our snacks. Finally, by choosing our online 
+snack shop, you can enjoy the convenience of having your favourite snacks 
+delivered to you, saving you time and effort while still delighting your taste buds.
+</p>
+</div>
+</div>
+
+<a href="#" class="about_btn">Order Now</a>
+
+</div>
+
+<div class="container">
+<!--Chocolates-->
+
+<div class="chocolates" id="Chocolates">
+<h1>Our<span>Chocolates</span></h1>
+
+<div class="chocolates_box">
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates1.png" alt="Chocolates1">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Anpanman Chocolate</h2>
+<p>
+A box of chocolates shaped like Anpanman characters.
+</p>
+<h3>RM18.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Anpanman Chocolate', 18.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates2.png" alt="Chocolates2">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Nissin Crisp Choco Snacks</h2>
+<p>
+This Crisp Choco yummy is sliced into 8 slices which is perfect sized to eat!
+</p>
+<h3>RM8.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Nissin Crisp Choco Snacks', 8.00)">Order Now</button></div>
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates3.png" alt="Chocolates3">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Disney Pop'n Egg Chocolate</h2>
+<p>
+Each chocolate ball comes with a strawberry gummy inside.
+</p>
+<h3>RM8.50</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Disney Pop n Egg Chocolate', 8.50)">Order Now</button></div>
+</div>
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates4.png" alt="Chocolates4">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Mary's Popping Chocolate</h2>
+<p>
+Mary's popular item which is delicious and fun.
+</p>
+<h3>RM30.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Mary s Popping Chocolate', 30.00)">Order Now</button></div>
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates5.png" alt="Chocolates5">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Tirol Chocolate Cubes</h2>
+<p>
+5 flavors of chocolates in a cute basket-shaped gift box.
+</p>
+<h3>RM25.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Triol Chocolate Cubes', 25.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates6.png" alt="Chocolates6">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Meiji Assort Chocolate</h2>
+<p>
+Choco Baby, Strawberry Choco, Coffee Choco, Banana Choco and Marble Choco.
+</p>
+<h3>RM9.10</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Meiji Assort Chocolate', 9.10)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates7.png" alt="Chocolates7">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Disney Glico Chocolate</h2>
+<p>
+A pack of ball-shaped chocolates decorated with random Disney charactor prints.
+</p>
+<h3>RM7.80</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Disney Glico Chocolate', 7.80)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates8.jpg" alt="Chocolates8">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Furuta Umbrella Chocolates</h2>
+<p>
+Snoopy character design candy party umbrella chocolate 20 piece gift box. 
+</p>
+<h3>RM45.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Furuta Umbrella Chocolates', 45.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates9.png" alt="Chocolates9">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Mary's FANCY Chocolate</h2>
+<p>
+Delicious and exquisite chocolate gift box for Christmas only.
+</p>
+<h3>RM47.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Mary s FANCY Chocolate', 47.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates10.png" alt="Chocolates10">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Meiji Choco Baby</h2>
+<p>
+A simple snack that you can enjoy and bring with you anytime and every where you go.
+</p>
+<h3>RM18.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Meiji Choco Baby', 18.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates11.png" alt="Chocolates11">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Meiji Almond Chocolate</h2>
+<p>
+Combination of chocolate and selected almond with premium quality.
+</p>
+<h3>RM25.00</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Meiji Almond CHocolate', 25.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chocolates_image">
+<img src="Chocolates12.png" alt="Chocolates12">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chocolates_info">
+<h2>Meiji CUBIE Chocolate</h2>
+<p>
+Milj chocolate that pursues the perfect balance of cocoa and milk.
+</p>
+<h3>RM8.50</h3>
+<div class="chocolates_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Meiji CUBIE Chocolate', 8.50)">Order Now</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!--Candies-->
+
+<div class="candies" id="Candies">
+<h1>Our<span>Candies</span></h1>
+
+<div class="candies_box">
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies1.png" alt="Candies1">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Bourbon Fruit Candy</h2>
+<p>
+This cube-shaped candy has updated look and taste!
+</p>
+<h3>RM10.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Bourbon Fruit Candy', 10.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies2.png" alt="Candies2">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Lipton Fruit Candy</h2>
+<p>
+Enjoy trying out these fruit tea-flavored sweets!
+</p>
+<h3>RM8.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Lipton Fruit Candy', 8.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies3.png" alt="Candies3">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Marukawa Fusen Gum</h2>
+<p>
+Each mini box contains for fruit-flavored chewing gum.
+</p>
+<h3>RM8.50</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Marukawa Fusen Gum', 8.50)">Order Now</button>
+</div>
+
+</div>
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies4.png" alt="Candies4">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Country Milk Candy</h2>
+<p>
+Relish the sweetness of fresh milk  with these candies.
+</p>
+<h3>RM18.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Country Milk Candy', 18.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies5.png" alt="Candies5">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Sakuma Ichigo Milk Candy</h2>
+<p>
+Enjoy this milky pink strawberry candy with inner layers.
+</p>
+<h3>RM15.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Sakuma Ishigo Milk Candy', 15.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies6.png" alt="Candies6">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Sakuma Candy Drops</h2>
+<p>
+Hard candy from Japan, flavored with fruit juice.
+</p>
+<h3>RM9.10</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Sakuma Candy Drops', 9.10)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies7.png" alt="Candies7">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Kanro Pencil Candy</h2>
+<p>
+Consists of a crystal clear outer layer and a thin line of color and flavor.
+</p>
+<h3>RM12.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Kankro Pencil Candy', 12.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies8.png" alt="Candies8">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Kinjyo Jelly Candy</h2>
+<p>
+Made of fruit-flavored jelly candy and rice candy.
+</p>
+<h3>RM15.50</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Kinjyo Jelly Candy', 15.50)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies9.png" alt="Candies9">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Kanro Rainbow Candy</h2>
+<p>
+A bag of teardrop-shaped candy that come in random color and flavor.
+</p>
+<h3>RM12.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Kanro Rainbow Candy', 12.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies10.png" alt="Candies10">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Kasugai Mint Candy</h2>
+<p>
+A pack of individually wrapped mint flavored har candies.
+</p>
+<h3>RM18.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Kasugai Mint Candy', 18.00)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies11.png" alt="Candies11">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Pine Fruit Candy</h2>
+<p>
+A pack od candy includes three different colors and flavors.
+</p>
+<h3>RM10.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Pine Fruit Candy', 10.00)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies12.png" alt="Candies12">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Senjaku Lemon Candy</h2>
+<p>
+Includes three lemonade flavors and one cola lemonade flavor
+</p>
+<h3>RM11.00</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Senjaku Lemon Candy', 11.00)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="candies_image">
+<img src="Candies13.png" alt="Candies13">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="candies_info">
+<h2>Senjaku Star Candy</h2>
+<p>
+Enjoy the sweet taste of this pack of star-shaped candy.
+</p>
+<h3>RM8.50</h3>
+<div class="candies_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Senjaku Star Candy', 8.50)">Order Now</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!--Chips-->
+
+<div class="chips" id="Chips">
+<h1>Our<span>Chips</span></h1>
+
+<div class="chips_box">
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips1.jpg" alt="Chips1">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Oyatsu Ramen Chips</h2>
+<p>
+Have fun munching on these noodle snacks flavored with monjayaki sauce!
+</p>
+<h3>RM6.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Oyatsu Ramen Chips', 6.50)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips2.jpg" alt="Chips2">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Calbee Potato Chips</h2>
+<p>
+A bag of thick and hard potato chips seosoned with grilled seaweed.
+</p>
+<h3>RM7.90</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Calbee Potato Chips', 7.90)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips3.jpg" alt="Chips3">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>SumikkoGurashi Cokkies</h2>
+<p>
+It's a chocolate chip cookie that comes in packaging featuring Sumikko Gurashi.
+</p>
+<h3>RM15.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('SumikkoGurashi Cokkies', 15.00)">Order Now</button>
+</div>
+
+</div>
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips4.png" alt="Chips4">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Sanko Seika Yuki Crackers</h2>
+<p>
+It blends well with the crunchy texture of crackers and snow-like powdered sugar.
+</p>
+<h3>RM6.10</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Sanko Seika Yuki Crackers', 6.10)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips5.png" alt="Chips5">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Koikeya Polinky Corn Puffs</h2>
+<p>
+A pack of crumchy triangle-shaped corn puff with a light corm flavor.
+</p>
+<h3>RM5.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Koikeya Polinky Corn Puffs', 5.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips6.png" alt="Chips6">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Tohato Amijaga Potato Chips</h2>
+<p>
+Round waffle-shaped thick potato chips flavored with alpine salt.
+</p>
+<h3>RM7.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Tohato Amijaga Potato Chips', 7.50)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips11.jpg" alt="Chips11">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Calbee Potato Chips</h2>
+<p>
+It has a taste of the sweet and sour flavor of Kishu plums mixed with salted kelp.
+</p>
+<h3>RM7.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Calbee Potato Chips', 7.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips8.png" alt="Chips8">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Tohato Caramel Corn</h2>
+<p>
+It's a puffy and crispy snack that features the sweet an refreshing taste of pineapple.
+</p>
+<h3>RM15.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Tohato Caramel Corn', 15.50)">Order Now</button></div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips9.png" alt="Chips9">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Anpanman Biscuit Snacks</h2>
+<p>
+A bag of tasty treat shaped like Anpanman and his friend.
+</p>
+<h3>RM12.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Anpanman Biscuit Snacks', 12.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips10.png" alt="Chips10">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Masuya Rice Crackers</h2>
+<p>
+A pack of yummy senbei seasoned with different size of crushed salt.
+</p>
+<h3>RM15.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<button onclick="addToCart('Masuya Pice Crackers', 15.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips7.png" alt="Chips7">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Tohato Potato Ring Snacks</h2>
+<p>
+Put these potato rings on your fingers and have fun as you munch on this snacks.
+</p>
+<h3>RM7.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Tohato Potato Ring Snacks', 7.50)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips12.jpg" alt="Chips12">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Bourbon Corn Chips</h2>
+<p>
+Have a quick light with slim pack of baked corn chips!
+</p>
+<h3>RM11.00</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Bourbon Corn Chips', 11.00)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips13.jpg" alt="Chips13">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Tahoto Sweet Potato Chips</h2>
+<p>
+Each piece is seoned with rich and luxurious fermented butter.
+</p>
+<h3>RM7.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Tahoyo Sweet Potato Chips', 7.50)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips14.jpg" alt="Chips14">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Calbee Potato Chips Crisp</h2>
+<p>
+The chips are perfectly crisp anf are light seasoned with salt.
+</p>
+<h3>RM8.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Calbee Potato Chips', 8.50)">Order Now</button>
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="chips_image">
+<img src="Chips15.png" alt="Chips15">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="chips_info">
+<h2>Yamayoshi Potato Chips</h2>
+<p>
+Stock up on this pack of yummy potato chips.It's perfect for snacking for drama time.
+</p>
+<h3>RM8.50</h3>
+<div class="chips_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button onclick="addToCart('Yamayoshi Potato Chips', 8.50)">Order Now</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+<!--Review-->
+
+<div class="review" id="Review">
+<h1>Customer<span>Review</span></h1>
+
+<div class="review_box">
+<div class="review_card">
+
+<div class="review_profile">
+<img src="person1.jpg" alt="person1">
+</div>
+
+<div class="review_text">
+<h2 class="name">Carly Trevino</h2>
+
+<div class="review_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="review_social">
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+</div>
+
+<p>
+Thank you for the fast delivery. As usual seller give excellent packing with layers of bubble wrap and individual bubble for fragile item as well, and the snacks all in good shape and cheap prices. Have been bulk buying from seller so many times now, never regret. Thank you for the free gift. It looks so mini and cute.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="review_card">
+
+<div class="review_profile">
+<img src="person2.jpg" alt="person2">
+</div>
+
+<div class="review_text">
+<h2 class="name">Fang Ya</h2>
+
+<div class="review_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+
+<div class="review_social">
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+</div>
+
+<p>
+I love this shop, no word I just love it. Shipment is always fast and quality never disappoints. The box is wrapped well as well, none of the goods are squished.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="review_card">
+
+<div class="review_profile">
+<img src="person3.jpg" alt="person3">
+</div>
+
+<div class="review_text">
+<h2 class="name">Bryson Carr</h2>
+
+<div class="review_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+
+<div class="review_social">
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+</div>
+
+<p>
+The packing is superb, very clean & well done. The delivery guy also super good. It's really delicious, cannot stop eating.Love to purchase from this store, will definitely repeat order!!!
+</p>
+
+</div>
+</div>
+
+<div class="review_card">
+
+<div class="review_profile">
+<img src="person4.jpg" alt="person4">
+</div>
+
+<div class="review_text">
+<h2 class="name">Kaia</h2>
+
+<div class="review_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="review_social">
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+</div>
+
+<p>
+Seller was very heipful and my enquiries were answered almost immediately. My oerder was wrapped securely. Goods sold at a resonable price. Will repurchase again in the future.
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+ 
+</div>
+
+<!--Order-->
+
+<div class="order" id="Order">
+<h1><span>Order</span>Now</h1>
+
+<div class="order_main">   
+
+<div class="order_image">
+<img src="Order.png" alt="Order">
+</div>
+
+<form action="#">
+
+<div class="input">
+<p>Name</p>
+<input type="text" placeholder="your name">
+</div>  
+
+<div class="input">
+<p>Email</p>
+<input type="email" placeholder="your email">
+</div>  
+
+<div class="input">
+<p>Number</p>
+<input placeholder="your number">
+</div>  
+
+<div class="input">
+<p>Address</p>
+<input type="text" placeholder="your address">
+</div>  
+
+<div class="order_btn">
+<button="Order Now">Order Now</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<!--Footer-->
+
+<footer>
+<div class="footer_main">
+
+<div class="footer_tag">
+<h2>Location</h2>
+<p>Malaysia</p>
+<p>Indonesia</p>
+<p>Thailand</p>
+<p>China</p>
+<p>Vietnam</p>
+</div>
+
+
+<div class="footer_tag">
+<h2>Quick link</h2>
+<p>Home</p>
+<p>About</p>
+<p>Chocolates</p>
+<p>Candies</p>
+<p>Chips</p>
+<p>Order</p>
+</div>
+
+<div class="footer_tag">
+<h2>Contact</h2>
+<p>+60 10 123 4567</p>
+<p>+60 50 987 6543</p>
+<p>snacks131@gmail.com</p>
+<p>foods113@gmail.com</p>
+</div>
+
+<div class="footer_tag">
+<h2>Our Service</h2>
+<p>Fast Delivary</p>
+<p>Easy Patment</p>
+<p>Good Service</p>
+</div>
+
+<div class="footer_tag">
+<h2>Follows</h2>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+</div>
+
+</div>
+</footer>
+
+</body>
+
+</html>
